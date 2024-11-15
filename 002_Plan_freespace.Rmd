@@ -5,3 +5,12 @@ date: "2024-11-14"
 output: html_document
 ---
 # plan freespace assignment portfolio dsfb2
+
+## Long read sequencing to detect imprinted DNA Methylation
+
+Literature study 
+* pmc.ncbi.nlm.nih.gov/articles/PMC6486641
+
+find available sequence data 
+
+play around with the data
