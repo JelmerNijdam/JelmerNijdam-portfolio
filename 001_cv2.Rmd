@@ -1,0 +1,64 @@
+---
+title: Curriculum Vitae
+name: Jelmer
+surname: Nijdam
+address: "Hoofddorp, the Netherlands"
+email: "jelmernijdam@gmail.com"
+github: JelmerNijdam
+aboutme: " Life Science student on Hogeschool Utrecht "
+output:
+  vitae::markdowncv:
+    theme: kjhealy
+---
+# Curriculum Vitae
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+## Some stuff about me
+
+ * Specialisation within Biomolecular research and Data Science.
+ * Naturally curious and analytical personality
+
+## Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "High school, Havo", "2011-17", "Haarlemmermeerlyceum", "Hoofddorp",
+  "Bachelor Informatics", "2017-18", "Hogeschool Leiden", "Leiden",
+  "Bachelor Healthcare technology", "2018-19", "Avans", "Breda",
+  "Bachelor Life Sciences", "2020-current", "Hogeschool Utrecht HU", "Utrecht" 
+) %>%
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+## Experience
+
+```{r}
+tribble(
+  ~Year, ~Type, ~Desc,
+  '2022-24', "Cafe waiter", "International Schiphol Airport" ,
+
+  ) %>%
+  brief_entries(
+    Type,
+    Year,
+    Desc
+  )
+```
+
+## Skills
+
+* Languages: Dutch, English
+* Lab Techniques: SDS-PAGE, ELISA, PCR, Western blot, cell culture
+* Software, R coding, Excel
+
+
+## Other
+
+*HU Honor star - Relationship between humans and nature
+

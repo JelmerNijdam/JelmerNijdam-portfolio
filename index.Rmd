@@ -1,0 +1,12 @@
+---
+title: "index"
+author: "Jelmer Nijdam"
+site: bookdown::bookdown_site
+documentclass: book
+date: "2024-11-15"
+output: 
+  bookdown::gitbook: default
+new_session:  yes
+---
+
+# Portfolio dsfb2
